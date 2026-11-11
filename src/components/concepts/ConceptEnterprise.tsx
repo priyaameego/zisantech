@@ -860,33 +860,36 @@ export const ConceptEnterprise: React.FC = () => {
             {[
               {
                 id: 1,
-                day: '14',
-                month: 'OCT',
+                day: '2',
+                month: 'DEC',
                 title: 'How SAP Consulting Helps Businesses Work Smarter',
-                author: 'by ZisanTech Team',
-                category: 'SAP Consulting',
+                author: 'by Admin',
+                category: 'Technology',
+                comments: 3,
                 image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-                excerpt: 'Running a business involves managing multiple activities. SAP consulting helps organizations connect technology with real business needs to simplify daily operations.'
+                excerpt: 'Running a business involves managing multiple activities from customer orders to reporting. SAP consulting connects technology with real business needs to streamline workflows.'
               },
               {
                 id: 2,
-                day: '28',
-                month: 'NOV',
+                day: '7',
+                month: 'JAN',
                 title: 'Why Reliable IT Services Matter for Growing Businesses',
-                author: 'by ZisanTech Team',
-                category: 'Enterprise IT',
+                author: 'by Admin',
+                category: 'Technology',
+                comments: 5,
                 image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
-                excerpt: 'Reliable IT services help businesses resolve technical challenges, maintain enterprise systems, and build dependable technology environments for scalable growth.'
+                excerpt: 'From enterprise communication to ERP infrastructure, companies depend on reliable IT support to maintain systems, prevent downtime, and accelerate operations.'
               },
               {
                 id: 3,
-                day: '15',
-                month: 'JAN',
+                day: '12',
+                month: 'FEB',
                 title: 'Building Your Career Through Practical SAP Training',
-                author: 'by ZisanTech Team',
-                category: 'Career Training',
+                author: 'by Admin',
+                category: 'Technology',
+                comments: 4,
                 image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
-                excerpt: 'Explore real-world business scenarios, master system transactions in live sandboxes, and bridge the gap between theory and actual enterprise workplace consulting.'
+                excerpt: 'By exploring enterprise business scenarios and practicing transactions on live server sandboxes, learners build confidence and hands-on skills for consulting roles.'
               }
             ].map((blog, idx) => (
               <motion.div
@@ -895,42 +898,40 @@ export const ConceptEnterprise: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.15 }}
-                className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-slate-200/90 hover:border-[#087FE5]/50 flex flex-col justify-between cursor-pointer"
+                className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col justify-between cursor-pointer"
               >
                 <div>
-                  {/* Image with Top-Right Date Badge & Smooth Hover Zoom */}
+                  {/* Image with Exact Orange/Gold Date Block (as in screenshot 2) */}
                   <div className="relative h-60 sm:h-64 w-full overflow-hidden bg-slate-100">
                     <img
                       src={blog.image}
                       alt={blog.title}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                     />
-                    {/* Subtle Dark Vignette on Hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                    {/* Top-Right ZisanTech Date Badge (Brand Electric Blue & White) */}
-                    <div className="absolute top-3 right-3 z-20 bg-gradient-to-b from-[#087FE5] to-[#063B83] text-white px-3.5 py-2 rounded-lg shadow-lg text-center flex flex-col items-center justify-center min-w-[50px] border border-white/20 group-hover:scale-105 transition-transform">
-                      <span className="text-lg font-black leading-none font-heading">{blog.day}</span>
+                    {/* Top-Right Date Badge Block (Matching Screenshot 2: Orange/Gold Block) */}
+                    <div className="absolute top-0 right-4 z-20 bg-[#F59E0B] text-white px-3 py-2 text-center flex flex-col items-center justify-center min-w-[46px] shadow-md">
+                      <span className="text-base font-bold leading-none font-heading">{blog.day}</span>
                       <span className="text-[10px] font-extrabold tracking-wider leading-none mt-1 uppercase font-mono">{blog.month}</span>
                     </div>
                   </div>
 
                   {/* Content Container */}
-                  <div className="p-6 sm:p-7 space-y-3">
-                    {/* Meta info: by Admin & Technology */}
-                    <div className="flex items-center gap-4 text-xs font-medium text-slate-500">
+                  <div className="p-6 space-y-3">
+                    {/* Meta info: by Admin & Technology with orange icons */}
+                    <div className="flex items-center gap-4 text-xs font-normal text-slate-500">
                       <span className="flex items-center gap-1.5 text-slate-600">
-                        <User className="w-3.5 h-3.5 text-[#087FE5]" />
+                        <User className="w-3.5 h-3.5 text-[#F59E0B]" />
                         <span>{blog.author}</span>
                       </span>
                       <span className="flex items-center gap-1.5 text-slate-600">
-                        <Tag className="w-3.5 h-3.5 text-[#087FE5]" />
+                        <Tag className="w-3.5 h-3.5 text-[#F59E0B]" />
                         <span>{blog.category}</span>
                       </span>
                     </div>
 
                     {/* Blog Title */}
-                    <h3 className="text-lg sm:text-xl font-bold text-[#071B49] group-hover:text-[#087FE5] transition-colors leading-snug font-heading">
+                    <h3 className="text-xl font-bold text-[#1e293b] group-hover:text-[#087FE5] transition-colors leading-snug font-heading">
                       <a href="#contact-cta">{blog.title}</a>
                     </h3>
 
@@ -940,13 +941,16 @@ export const ConceptEnterprise: React.FC = () => {
                   </div>
                 </div>
 
-                <div className="p-6 sm:p-7 pt-0">
-                  <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                    <span className="text-xs font-bold text-[#087FE5] group-hover:text-[#063B83] flex items-center gap-1 transition-colors">
-                      <span>Read Full Insight</span>
-                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1.5 transition-transform" />
-                    </span>
-                  </div>
+                {/* Footer Bar with READ MORE & Comments (Exact match with screenshot 2) */}
+                <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
+                  <span className="font-bold uppercase tracking-wider text-slate-500 group-hover:text-[#F59E0B] flex items-center gap-1.5 transition-colors">
+                    <span>READ MORE</span>
+                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                  <span className="flex items-center gap-1 text-slate-400 font-medium">
+                    <MessageSquare className="w-3.5 h-3.5 text-[#F59E0B]" />
+                    <span>{blog.comments}</span>
+                  </span>
                 </div>
               </motion.div>
             ))}
