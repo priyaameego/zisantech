@@ -90,7 +90,7 @@ export const ConceptEnterprise: React.FC = () => {
   return (
     <div className="bg-white text-slate-800 font-sans selection:bg-[#063B83] selection:text-white overflow-hidden">
       {/* =========================================================================
-          1. MAWAI AUTHENTIC REVOLUTION SLIDER HERO BANNER
+          1. ZisanTech AUTHENTIC REVOLUTION SLIDER HERO BANNER
       ========================================================================= */}
       <section className="relative w-full h-[580px] sm:h-[640px] md:h-[680px] lg:h-[720px] overflow-hidden bg-slate-950">
         {/* Slides Container - Smooth crossfade with Framer Motion luxury animated text */}
@@ -235,7 +235,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          2. MAWAI 3-FEATURE BENEFIT BAR (Brand Matching Blue Hover Cards)
+          2. ZisanTech 3-FEATURE BENEFIT BAR (Brand Matching Blue Hover Cards)
       ========================================================================= */}
       <section id="benefits" className="relative z-30 -mt-8 sm:-mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -317,7 +317,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          3. MAWAI "ABOUT SECTION" (Digitize Your Business Processes - Brand Blue Layout)
+          3. ZisanTech "ABOUT SECTION" (Digitize Your Business Processes - Brand Blue Layout)
       ========================================================================= */}
       <section id="about" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
@@ -453,7 +453,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          4. MAWAI "WHY CHOOSE US" SECTION (Full-width Navy Blue with 3D Depth)
+          4. ZisanTech "WHY CHOOSE US" SECTION (Full-width Navy Blue with 3D Depth)
       ========================================================================= */}
       <section id="why-us" className="bg-gradient-to-br from-[#071B49] via-[#05143A] to-[#040F2B] text-white py-20 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -534,7 +534,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          5. MAWAI FUN FACTS / METRICS STRIP
+          5. ZisanTech FUN FACTS / METRICS STRIP
       ========================================================================= */}
       <section id="metrics" className="bg-[#f5f8fc] py-16 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -595,7 +595,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          6. MAWAI "INDUSTRIES WE SERVE" SECTION (With 3D Hover Zoom)
+          6. ZisanTech "INDUSTRIES WE SERVE" SECTION (With 3D Hover Zoom)
       ========================================================================= */}
       <section id="industries" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -674,7 +674,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          7. MAWAI "SERVICES & SOLUTIONS" CARDS SECTION (3D Hover Glow & Sheen)
+          7. ZisanTech "SERVICES & SOLUTIONS" CARDS SECTION (3D Hover Glow & Sheen)
       ========================================================================= */}
       <section id="services" className="bg-[#f5f8fc] py-24 border-t border-slate-200 relative overflow-hidden">
         {/* Subtle decorative background aura */}
@@ -773,7 +773,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          8. MAWAI "CAREERS / TRAINING" SECTION (Take Your Careers to New Heights)
+          8. ZisanTech "CAREERS / TRAINING" SECTION (Take Your Careers to New Heights)
       ========================================================================= */}
       <section id="training" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -841,11 +841,11 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          9. MAWAI "BLOGS" SECTION (Exact Match with Image 1: Date Block, Hover Zoom & Brand Blue)
+          9. ZisanTech "BLOGS" SECTION (Exact Match with Image 1: Date Block, Hover Zoom & Brand Blue)
       ========================================================================= */}
       <section id="blogs" className="bg-[#f8fafc] py-24 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Centered Mawai Header */}
+          {/* Centered ZisanTech Header */}
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-[#087FE5] font-mono">
               INSIGHTS & PERSPECTIVES
@@ -860,33 +860,33 @@ export const ConceptEnterprise: React.FC = () => {
             {[
               {
                 id: 1,
-                day: '2',
-                month: 'DEC',
-                title: 'Empowering Your Business with SAP',
-                author: 'by Admin',
-                category: 'Technology',
+                day: '14',
+                month: 'OCT',
+                title: 'How SAP Consulting Helps Businesses Work Smarter',
+                author: 'by ZisanTech Team',
+                category: 'SAP Consulting',
                 image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-                excerpt: 'How next-generation SAP ERP cloud architectures drive operational agility, eliminate process bottlenecks, and scale revenue.'
+                excerpt: 'Running a business involves managing multiple activities. SAP consulting helps organizations connect technology with real business needs to simplify daily operations.'
               },
               {
                 id: 2,
-                day: '7',
-                month: 'JAN',
-                title: 'SAP: Driving Industry Transformation ...',
-                author: 'by Admin',
-                category: 'Technology',
+                day: '28',
+                month: 'NOV',
+                title: 'Why Reliable IT Services Matter for Growing Businesses',
+                author: 'by ZisanTech Team',
+                category: 'Enterprise IT',
                 image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
-                excerpt: 'Explore how AI-integrated SAP S/4HANA automates predictive maintenance, supply chains, and statutory tax compliance.'
+                excerpt: 'Reliable IT services help businesses resolve technical challenges, maintain enterprise systems, and build dependable technology environments for scalable growth.'
               },
               {
                 id: 3,
-                day: '12',
-                month: 'FEB',
-                title: 'SAP S/4HANA Cloud: Private or Public? ...',
-                author: 'by Admin',
-                category: 'Technology',
+                day: '15',
+                month: 'JAN',
+                title: 'Building Your Career Through Practical SAP Training',
+                author: 'by ZisanTech Team',
+                category: 'Career Training',
                 image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
-                excerpt: 'Comprehensive decision framework comparing private versus public cloud ERP deployments for high-growth enterprises.'
+                excerpt: 'Explore real-world business scenarios, master system transactions in live sandboxes, and bridge the gap between theory and actual enterprise workplace consulting.'
               }
             ].map((blog, idx) => (
               <motion.div
@@ -908,7 +908,7 @@ export const ConceptEnterprise: React.FC = () => {
                     {/* Subtle Dark Vignette on Hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
-                    {/* Top-Right Mawai Date Badge (Brand Electric Blue & White) */}
+                    {/* Top-Right ZisanTech Date Badge (Brand Electric Blue & White) */}
                     <div className="absolute top-3 right-3 z-20 bg-gradient-to-b from-[#087FE5] to-[#063B83] text-white px-3.5 py-2 rounded-lg shadow-lg text-center flex flex-col items-center justify-center min-w-[50px] border border-white/20 group-hover:scale-105 transition-transform">
                       <span className="text-lg font-black leading-none font-heading">{blog.day}</span>
                       <span className="text-[10px] font-extrabold tracking-wider leading-none mt-1 uppercase font-mono">{blog.month}</span>
@@ -955,7 +955,7 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
-          10. MAWAI CALL TO ACTION SECTION (Navy Blue Banner)
+          10. ZisanTech CALL TO ACTION SECTION (Navy Blue Banner)
       ========================================================================= */}
       <section id="contact-cta" className="bg-gradient-to-r from-[#071B49] via-[#05143A] to-[#030A1C] text-white py-16 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
