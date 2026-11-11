@@ -873,6 +873,142 @@ export const ConceptEnterprise: React.FC = () => {
       </section>
 
       {/* =========================================================================
+          8. ZISANTECH "WHAT WE BRING TO YOUR BUSINESS" (Image 3 from ZisanTech.com)
+      ========================================================================= */}
+      <section className="py-24 bg-white border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#071B49] font-heading">
+              What We Bring to Your Business
+            </h2>
+            <div className="w-16 h-1 bg-[#087FE5] mx-auto rounded-full"></div>
+            <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+              At ZisanTech Solutions, we provide dependable, business-focused solutions designed to simplify your operations and support sustainable growth. Our blend of SAP expertise and IT innovation ensures your business runs efficiently and adapts to changing needs.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Pillar 1: Process Optimization */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: 0.1 }}
+              whileHover={{ y: -8 }}
+              className="bg-slate-50/80 hover:bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-[#087FE5] shadow-sm hover:shadow-xl transition-all duration-300 text-center space-y-4 group"
+            >
+              <div className="w-16 h-16 rounded-full border-2 border-[#08B9E8] bg-white text-[#087FE5] mx-auto flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                <Rocket className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-[#071B49] font-heading group-hover:text-[#087FE5] transition-colors">
+                Process Optimization
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                We analyze your existing workflows and identify inefficiencies, then design streamlined, standardized processes that boost productivity and reduce operational friction.
+              </p>
+            </motion.div>
+
+            {/* Pillar 2: Tailored SAP Implementation & Support */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: 0.2 }}
+              whileHover={{ y: -8 }}
+              className="bg-slate-50/80 hover:bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-[#087FE5] shadow-sm hover:shadow-xl transition-all duration-300 text-center space-y-4 group"
+            >
+              <div className="w-16 h-16 rounded-full border-2 border-[#087FE5] bg-white text-[#087FE5] mx-auto flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                <CheckCircle className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-[#071B49] font-heading group-hover:text-[#087FE5] transition-colors">
+                Tailored SAP Implementation &amp; Support
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Our team customizes SAP solutions to fit your specific business requirements, ensuring seamless integration and maximum value from your technology investment.
+              </p>
+            </motion.div>
+
+            {/* Pillar 3: Quality Assurance & Continuous Improvement */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.45, delay: 0.3 }}
+              whileHover={{ y: -8 }}
+              className="bg-slate-50/80 hover:bg-white p-8 rounded-2xl border border-slate-200/80 hover:border-[#087FE5] shadow-sm hover:shadow-xl transition-all duration-300 text-center space-y-4 group"
+            >
+              <div className="w-16 h-16 rounded-full border-2 border-[#063B83] bg-white text-[#063B83] mx-auto flex items-center justify-center shadow-md group-hover:scale-110 transition-transform">
+                <ShieldCheck className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-bold text-[#071B49] font-heading group-hover:text-[#087FE5] transition-colors">
+                Quality Assurance &amp; Continuous Improvement
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Through rigorous testing and ongoing monitoring, we maintain high standards for all solutions, ensuring reliability, accuracy, and performance over time.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          8. ZISANTECH "OUR SKILLS & PROFICIENCY" (Image 2 from ZisanTech.com)
+      ========================================================================= */}
+      <section className="py-24 bg-[#f8fafc] border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            {/* Left Narrative */}
+            <div className="lg:col-span-5 space-y-5">
+              <div className="inline-flex items-center gap-2">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#087FE5] font-mono">
+                  BENCHMARK ARCHITECTURE
+                </span>
+                <span className="w-8 h-0.5 bg-[#087FE5] rounded-full"></span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-[#071B49] font-heading leading-tight">
+                Our <span className="text-[#087FE5]">Skills</span>
+              </h2>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#071B49] font-heading">
+                We're skilled in wide range of enterprise ERP and digital market tools.
+              </h3>
+              <p className="text-sm text-slate-600 leading-relaxed">
+                We combine advanced technical skills, real-world project experience, and a strong understanding of business needs to create impactful, tailored enterprise solutions.
+              </p>
+            </div>
+
+            {/* Right Interactive Progress Bars */}
+            <div className="lg:col-span-7 space-y-6">
+              {[
+                { id: '01', title: 'SAP Expertise', pct: 90 },
+                { id: '02', title: 'System Integration', pct: 70 },
+                { id: '03', title: 'SAP Training Excellence', pct: 80 },
+                { id: '04', title: 'IT & Digital Solutions', pct: 95 },
+                { id: '05', title: 'Business Transformation', pct: 75 }
+              ].map((skill, idx) => (
+                <div key={skill.id} className="space-y-2">
+                  <div className="flex items-center justify-between text-xs sm:text-sm font-bold text-[#071B49]">
+                    <span className="font-mono">
+                      <span className="text-[#087FE5]">{skill.id} —</span> {skill.title}
+                    </span>
+                    <span className="text-[#087FE5] font-mono">{skill.pct}%</span>
+                  </div>
+                  <div className="h-2.5 w-full bg-slate-200/90 rounded-full overflow-hidden p-0.5">
+                    <motion.div
+                      initial={{ width: 0 }}
+                      whileInView={{ width: `${skill.pct}%` }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 1, delay: idx * 0.1, ease: 'easeOut' }}
+                      className="h-full bg-gradient-to-r from-[#063B83] via-[#087FE5] to-[#08B9E8] rounded-full"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
           8. ZisanTech "CAREERS / TRAINING" SECTION (Take Your Careers to New Heights)
       ========================================================================= */}
       <section id="training" className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1001,37 +1137,37 @@ export const ConceptEnterprise: React.FC = () => {
                 className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col justify-between cursor-pointer"
               >
                 <div>
-                  {/* Image with Exact Orange/Gold Date Block (as in screenshot 2) */}
+                  {/* Image with Brand Blue/Cyan Date Block (NO Yellow/Orange anywhere) */}
                   <div className="relative h-60 sm:h-64 w-full overflow-hidden bg-slate-100">
                     <img
                       src={blog.image}
                       alt={blog.title}
-                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                     />
 
-                    {/* Top-Right Date Badge Block (Matching Screenshot 2: Orange/Gold Block) */}
-                    <div className="absolute top-0 right-4 z-20 bg-[#F59E0B] text-white px-3 py-2 text-center flex flex-col items-center justify-center min-w-[46px] shadow-md">
-                      <span className="text-base font-bold leading-none font-heading">{blog.day}</span>
-                      <span className="text-[10px] font-extrabold tracking-wider leading-none mt-1 uppercase font-mono">{blog.month}</span>
+                    {/* Top-Right Date Badge Block (Logo-Matching Gradient: #063B83 to #087FE5 with Cyan Accent) */}
+                    <div className="absolute top-0 right-4 z-20 bg-gradient-to-b from-[#063B83] to-[#087FE5] text-white px-3.5 py-2.5 text-center flex flex-col items-center justify-center min-w-[50px] shadow-lg border-b border-x border-[#08B9E8]/40">
+                      <span className="text-base font-extrabold leading-none font-heading">{blog.day}</span>
+                      <span className="text-[10px] font-black tracking-widest leading-none mt-1 uppercase font-mono text-[#08B9E8]">{blog.month}</span>
                     </div>
                   </div>
 
                   {/* Content Container */}
                   <div className="p-6 space-y-3">
-                    {/* Meta info: by Admin & Technology with orange icons */}
+                    {/* Meta info: by Admin & Technology with brand blue icons */}
                     <div className="flex items-center gap-4 text-xs font-normal text-slate-500">
                       <span className="flex items-center gap-1.5 text-slate-600">
-                        <User className="w-3.5 h-3.5 text-[#F59E0B]" />
+                        <User className="w-3.5 h-3.5 text-[#087FE5]" />
                         <span>{blog.author}</span>
                       </span>
                       <span className="flex items-center gap-1.5 text-slate-600">
-                        <Tag className="w-3.5 h-3.5 text-[#F59E0B]" />
+                        <Tag className="w-3.5 h-3.5 text-[#087FE5]" />
                         <span>{blog.category}</span>
                       </span>
                     </div>
 
                     {/* Blog Title */}
-                    <h3 className="text-xl font-bold text-[#1e293b] group-hover:text-[#087FE5] transition-colors leading-snug font-heading">
+                    <h3 className="text-xl font-bold text-[#071B49] group-hover:text-[#087FE5] transition-colors leading-snug font-heading">
                       <a href="#contact-cta">{blog.title}</a>
                     </h3>
 
@@ -1041,14 +1177,14 @@ export const ConceptEnterprise: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Footer Bar with READ MORE & Comments (Exact match with screenshot 2) */}
+                {/* Footer Bar with READ MORE & Comments (Brand Blue Palette) */}
                 <div className="px-6 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="font-bold uppercase tracking-wider text-slate-500 group-hover:text-[#F59E0B] flex items-center gap-1.5 transition-colors">
+                  <span className="font-bold uppercase tracking-wider text-slate-600 group-hover:text-[#087FE5] flex items-center gap-1.5 transition-colors">
                     <span>READ MORE</span>
-                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1.5 transition-transform" />
                   </span>
                   <span className="flex items-center gap-1 text-slate-400 font-medium">
-                    <MessageSquare className="w-3.5 h-3.5 text-[#F59E0B]" />
+                    <MessageSquare className="w-3.5 h-3.5 text-[#087FE5]" />
                     <span>{blog.comments}</span>
                   </span>
                 </div>
