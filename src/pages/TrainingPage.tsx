@@ -22,7 +22,9 @@ export const TrainingPage: React.FC = () => {
     ? TRAINING_MODULES.find(
         (t) =>
           t.id === parseInt(id) &&
-          (category ? t.category.toLowerCase() === decodeURIComponent(category).toLowerCase() : true)
+          (category
+            ? t.category.toLowerCase().replace(/s$/, '') === decodeURIComponent(category).toLowerCase().replace(/s$/, '')
+            : true)
       )
     : null;
 
@@ -36,7 +38,7 @@ export const TrainingPage: React.FC = () => {
             <div className="flex items-center gap-2 text-xs text-slate-400 mb-4">
               <Link to="/" className="hover:text-white">Home</Link>
               <span>/</span>
-              <Link to="/trainingprogrammes/Functional Modules/1" className="hover:text-white">Training</Link>
+              <Link to="/training" className="hover:text-white">Training</Link>
               <span>/</span>
               <span className="text-teal-400 font-semibold">{selectedModule.title}</span>
             </div>

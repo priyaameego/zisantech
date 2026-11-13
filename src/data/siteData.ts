@@ -260,7 +260,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'SAP Custom Solutions',
     slug: 'sap-custom-solutions',
     url: '/services1/SAP SERVICES/2',
-    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80',
+    image: '/blog_reliable_it_fresh.jpg',
     shortDesc: 'Bespoke ABAP, Fiori apps, workflow automation, and custom enhancements tailored to your unique proprietary operational edges.',
     fullDesc: [
       'When standard SAP configurations do not match your unique enterprise competitive advantage, ZisanTech builds secure, scalable, and upgrade-safe custom solutions.',
@@ -292,7 +292,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'SAP Support',
     slug: 'sap-support',
     url: '/services1/SAP SERVICES/3',
-    image: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80',
+    image: '/blog_sap_consulting_fresh.jpg',
     shortDesc: 'Dependable L1-L3 SLA-governed support, performance monitoring, defect resolution, and continuous system optimization.',
     fullDesc: [
       'Ensure maximum business continuity with ZisanTech’s 24/7 proactive SAP Support. We protect your critical transactional ecosystem against unexpected downtime and bottlenecks.',
@@ -1179,7 +1179,7 @@ export const BLOGS: BlogItem[] = [
     readTime: '7 min read',
     date: 'January 22, 2026',
     author: 'ZisanTech Academic Council',
-    image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80',
+    image: '/blog_sap_training_fresh.jpg',
     excerpt: 'Theoretical slide decks do not prepare you for enterprise consulting. Why hands-on sandbox experience, real-world case studies, and business acumen define successful SAP professionals.',
     content: [
       'Enterprise technology continues to face a massive shortage of qualified, implementation-ready SAP talent. However, companies are increasingly wary of candidates who only memorize theoretical certification dumps without real business understanding.',

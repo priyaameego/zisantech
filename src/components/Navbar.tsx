@@ -78,64 +78,41 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="w-full sticky top-0 z-50 bg-white shadow-sm font-sans">
-      {/* 1. TOP MICRO-BAR: Professional Top Bar with Direct Quick Links */}
-      <div className="bg-[#f5f8fc] border-b border-slate-200 text-xs text-slate-600 py-2 hidden md:block">
+      {/* 1. TOP ALERT BAR: Executive Premium Enterprise Ribbon (No Contact Clutter, Shifted Downwards) */}
+      <div className="bg-gradient-to-r from-[#05143A] via-[#071B49] to-[#040F2B] border-b border-white/10 text-xs py-2 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="flex items-center space-x-5">
-            <a
-              href={`mailto:${COMPANY_INFO.primaryEmail}`}
-              className="flex items-center gap-1.5 text-slate-700 hover:text-[#063B83] transition-colors font-medium"
-            >
-              <Mail className="w-3.5 h-3.5 text-[#087FE5]" />
-              <span>{COMPANY_INFO.primaryEmail}</span>
-            </a>
-            <span className="text-slate-300">|</span>
-            <div className="flex items-center gap-1.5 text-slate-600">
-              <MapPin className="w-3.5 h-3.5 text-[#087FE5]" />
-              <span>{COMPANY_INFO.address}</span>
-            </div>
-            <span className="text-slate-300">|</span>
-            <a
-              href={`tel:${COMPANY_INFO.primaryPhone}`}
-              className="flex items-center gap-1.5 text-slate-700 hover:text-[#063B83] transition-colors font-medium"
-            >
-              <Phone className="w-3.5 h-3.5 text-[#087FE5]" />
-              <span>{COMPANY_INFO.primaryPhone}</span>
-            </a>
+          {/* Executive Announcement Pill & Value Proposition */}
+          <div className="flex items-center gap-3">
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-[#063B83] to-[#087FE5] text-white font-extrabold text-[10px] uppercase tracking-wider shadow-sm border border-[#08B9E8]/30">
+              <Sparkles className="w-3 h-3 text-[#08B9E8]" />
+              <span>Official SAP Partner</span>
+            </span>
+            <span className="text-slate-300 text-xs font-medium tracking-wide hidden lg:inline">
+              Accelerating Enterprise S/4HANA &amp; RISE Cloud Transformation with Clean-Core Innovation
+            </span>
           </div>
 
-          {/* Quick links & Consultation button */}
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-3 text-[11px] font-semibold text-slate-600">
-              <span className="text-slate-400 font-normal">Quick:</span>
-              <button
-                onClick={() => scrollToSection('blogs')}
-                className="hover:text-[#087FE5] transition-colors flex items-center gap-1 text-[#063B83] font-bold"
-              >
-                <BookOpen className="w-3 h-3 text-[#087FE5]" />
-                <span>Blogs</span>
-              </button>
-              <span className="text-slate-300">·</span>
-              <button
-                onClick={() => scrollToSection('training')}
-                className="hover:text-[#087FE5] transition-colors"
-              >
-                Careers
-              </button>
-            </div>
-            <span className="text-slate-300">|</span>
+          {/* Quick Actions: Careers, Social & Direct Consultation */}
+          <div className="flex items-center space-x-3.5">
+            <button
+              onClick={() => scrollToSection('training')}
+              className="text-xs font-semibold text-slate-300 hover:text-[#08B9E8] transition-colors cursor-pointer"
+            >
+              Careers
+            </button>
+            <span className="text-slate-600">|</span>
             <a
               href={COMPANY_INFO.social.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="w-6 h-6 rounded-full bg-white border border-slate-200 hover:bg-[#087FE5] hover:text-white hover:border-[#087FE5] flex items-center justify-center text-slate-600 font-bold text-[10px] transition-all"
+              className="w-6 h-6 rounded-full bg-white/10 border border-white/15 hover:bg-[#087FE5] hover:text-white hover:border-[#087FE5] flex items-center justify-center text-slate-200 font-bold text-[10px] transition-all"
               aria-label="LinkedIn"
             >
               in
             </a>
             <button
               onClick={() => scrollToSection('contact-cta')}
-              className="px-3.5 py-1.5 bg-[#063B83] hover:bg-[#087FE5] text-white text-[11px] font-semibold rounded shadow-sm transition-colors cursor-pointer"
+              className="px-4 py-1 bg-gradient-to-r from-[#087FE5] to-[#08B9E8] hover:from-[#08B9E8] hover:to-[#087FE5] text-white text-xs font-bold rounded shadow-md shadow-[#087FE5]/30 hover:shadow-[#08B9E8]/40 transition-all cursor-pointer transform hover:scale-[1.02]"
             >
               Request Consultation
             </button>

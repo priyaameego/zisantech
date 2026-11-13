@@ -23,7 +23,9 @@ export const ServicesPage: React.FC = () => {
     ? SERVICES.find(
         (s) =>
           s.id === parseInt(id) &&
-          (category ? s.category.toLowerCase() === decodeURIComponent(category).toLowerCase() : true)
+          (category
+            ? s.category.toLowerCase().replace(/s$/, '') === decodeURIComponent(category).toLowerCase().replace(/s$/, '')
+            : true)
       )
     : null;
 
@@ -36,7 +38,7 @@ export const ServicesPage: React.FC = () => {
             <div className="flex items-center gap-2 text-xs text-slate-400 mb-4">
               <Link to="/" className="hover:text-white">Home</Link>
               <span>/</span>
-              <Link to="/services1/SAP SERVICES/1" className="hover:text-white">Services</Link>
+              <Link to="/services" className="hover:text-white">Services</Link>
               <span>/</span>
               <span className="text-teal-400 font-semibold">{selectedService.title}</span>
             </div>
