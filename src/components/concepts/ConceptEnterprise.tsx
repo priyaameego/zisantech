@@ -43,40 +43,40 @@ export const ConceptEnterprise: React.FC = () => {
 
   const slides = [
     {
-      badge: 'IDEAL FOR ALL BUSINESS SIZES',
-      line1: 'Empower Your Business',
-      highlight: 'With Customizable SAP',
-      line2: 'Solutions With ZisanTech',
-      description: 'Elevate your small or medium-sized enterprise to the next level with our certified SAP S/4HANA solutions, agile implementations, and 24/7 dedicated support.',
-      bgImage: '/slide1_bg.webp',
+      badge: 'SAP CONSULTING IN INDIA',
+      line1: 'Transforming Businesses',
+      highlight: 'Through SAP & Technology',
+      line2: 'With ZisanTech Solutions',
+      description: 'Expert SAP consulting and IT services designed to simplify operations, drive innovation, and accelerate enterprise growth.',
+      bgImage: '/hero_sap_slide1.jpg',
+      btnText: 'OUR SERVICES',
+      btnLink: '#services',
+      secondaryBtnText: 'CONSULT AN ARCHITECT',
+      secondaryBtnLink: '#contact-cta'
+    },
+    {
+      badge: 'INNOVATIVE SAP SOLUTIONS',
+      line1: 'Driving Smarter Operations',
+      highlight: 'And Connected Experiences',
+      line2: 'With Future-Ready SAP ERP',
+      description: 'Unlock enterprise-grade SAP S/4HANA rollout, custom integrations, cloud migrations, and round-the-clock enterprise support.',
+      bgImage: '/hero_sap_slide2.jpg',
       btnText: 'GET A FREE DEMO',
       btnLink: '#contact-cta',
-      secondaryBtnText: 'EXPLORE SERVICES',
-      secondaryBtnLink: '#services'
+      secondaryBtnText: 'EXPLORE MODULES',
+      secondaryBtnLink: '#training'
     },
     {
-      badge: 'CERTIFIED RISE WITH SAP PRACTICE',
-      line1: 'Unlock The Power Of',
-      highlight: 'SAP S/4HANA Cloud ERP',
-      line2: 'With ZisanTech Enterprise',
-      description: 'Your Trusted Partner for Cloud, On-Premise, and Hybrid Solutions, empowering your enterprise to achieve operational excellence and real-time visibility.',
-      bgImage: '/slide2_bg.webp',
-      btnText: 'CONSULT AN ARCHITECT',
-      btnLink: '#contact-cta',
-      secondaryBtnText: 'EXPLORE SOLUTIONS',
-      secondaryBtnLink: '#services'
-    },
-    {
-      badge: '10+ YEARS OF PROVEN DELIVERY',
-      line1: 'Best SAP ERP Consultancy',
-      highlight: 'Tailored For Enterprise Growth',
-      line2: '& Process Automation',
-      description: 'Comprehensive SAP consulting, tailored ERP modules for Indian manufacturing and retail, and hands-on professional corporate training.',
-      bgImage: '/slide3_bg.webp',
-      btnText: 'SCHEDULE DEMO',
-      btnLink: '#contact-cta',
-      secondaryBtnText: 'ABOUT ZISANTECH',
-      secondaryBtnLink: '#about'
+      badge: 'PROVEN ENTERPRISE EXCELLENCE',
+      line1: 'We Drive Real Success',
+      highlight: 'Process Automation & Training',
+      line2: 'Across Global Standards',
+      description: 'Combining functional & technical SAP excellence with modern enterprise IT services to empower businesses and career aspirants.',
+      bgImage: '/hero_sap_slide3.jpg',
+      btnText: 'KNOW OUR STORY',
+      btnLink: '#about',
+      secondaryBtnText: 'TALK TO EXPERT',
+      secondaryBtnLink: '#contact-cta'
     }
   ];
 
@@ -110,23 +110,24 @@ export const ConceptEnterprise: React.FC = () => {
                 alt={slide.line1}
                 animate={
                   isActive
-                    ? { scale: [1, 1.12], x: [0, -12], y: [0, -8] }
+                    ? { scale: [1, 1.15], x: [0, -18], y: [0, -10] }
                     : { scale: 1, x: 0, y: 0 }
                 }
                 transition={{
                   duration: 8,
                   ease: [0.25, 0.1, 0.25, 1]
                 }}
-                className="absolute inset-0 w-full h-full object-cover object-center filter grayscale contrast-125 brightness-75"
+                className="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.72] contrast-[1.12]"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
-                  target.src = 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1800&q=80';
+                  target.src = '/zisantech_header_page.png';
                 }}
               />
 
               {/* Digital Transformation Glass HUD Overlay with Royal Navy Vignette */}
-              <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/35"></div>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_45%,rgba(6,59,131,0.35)_0%,transparent_65%)]"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/30"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_45%,rgba(8,127,229,0.22)_0%,transparent_70%)]"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
 
               {/* Slide Content: Active Staggered Fluid Motion */}
               {isActive && (
@@ -333,7 +334,7 @@ export const ConceptEnterprise: React.FC = () => {
             {/* Base Image: Authentic IT Enterprise Collaboration */}
             <div className="relative w-full sm:w-[86%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=85"
+                src="/zisantech_know_our_story.jpeg"
                 alt="ZisanTech SAP Solutions Team"
                 className="w-full h-[400px] sm:h-[460px] object-cover"
               />
@@ -347,7 +348,7 @@ export const ConceptEnterprise: React.FC = () => {
               className="relative sm:absolute sm:right-0 sm:bottom-6 w-full sm:w-[65%] rounded-3xl overflow-hidden shadow-2xl border-4 border-white mt-4 sm:mt-0 z-10 group cursor-pointer"
             >
               <img
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+                src="/zisantech_work_success1.png"
                 alt="Digital Transformation Presentation"
                 className="w-full h-[230px] sm:h-[270px] object-cover transition-transform duration-700 ease-out group-hover:scale-110"
               />
@@ -1102,7 +1103,7 @@ export const ConceptEnterprise: React.FC = () => {
                 author: 'by Admin',
                 category: 'Technology',
                 comments: 3,
-                image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+                image: '/zisantech_solutions.jpeg',
                 excerpt: 'Running a business involves managing multiple activities from customer orders to reporting. SAP consulting connects technology with real business needs to streamline workflows.'
               },
               {
@@ -1113,7 +1114,7 @@ export const ConceptEnterprise: React.FC = () => {
                 author: 'by Admin',
                 category: 'Technology',
                 comments: 5,
-                image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
+                image: '/zisantech_worksection.jpg',
                 excerpt: 'From enterprise communication to ERP infrastructure, companies depend on reliable IT support to maintain systems, prevent downtime, and accelerate operations.'
               },
               {
@@ -1124,7 +1125,7 @@ export const ConceptEnterprise: React.FC = () => {
                 author: 'by Admin',
                 category: 'Technology',
                 comments: 4,
-                image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80',
+                image: '/zisantech_stay_connected.png',
                 excerpt: 'By exploring enterprise business scenarios and practicing transactions on live server sandboxes, learners build confidence and hands-on skills for consulting roles.'
               }
             ].map((blog, idx) => (
